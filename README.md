@@ -2,6 +2,10 @@
 
 # Run Serverless Functions on data at rest with Stock Market data
 
+## WARNING: This repository is no longer maintained. 
+
+This repository will not be updated. The repository will be kept available in read-only mode.
+
 The application demonstrates an IBM Cloud Functions (based on Apache OpenWhisk) that does Cron Jobs with data at rest in a Cloudant database. The use case demonstrates how actions work with data services and execute logic at specific times in the Cron job configuration.
 
 One function, or action, is triggered by an event (in this use case, Cron triggers). This action gets data from the database and gets the news and stock market data of the companies from an external API (IEX API). The action invokes 2 more functions. One function passes the news to Watson Natural Language Understanding to get its sentiments and emotions found in the article. The other function notifies the user of the recent change of price in either SMS (Twilio) and/or Slack.
